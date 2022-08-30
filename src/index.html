@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-body">
+    <header class="site-header  py-11">
+        <div class="container mx-auto">
+            <div class="site-header__wrapper relative w-full flex justify-between items-center">
+                <a href="./index.html">
+                    <img src="../images/icons/site-logo.svg" 
+                    width="147" 
+                    height="24" 
+                    alt="Site logo">
+                </a>
+                
+                <nav class="site-header__nav w-full lg:w-auto hidden lg:block absolute lg:relative text-center lg:text-start">
+                    <ul class="site-header__list flex py-10 flex-col lg:flex-row bg-white h-291 lg:h-0 lg:py-0 lg:-m-12px">
+                        <li class="site-header__item mb-6 lg:mb-0 lg:mr-8">
+                            <a class="font-vietnam font-medium hover:opacity-50 transition-colors" href="#">Pricing</a>
+                        </li>
+                        <li class="site-header__item mb-6 lg:mb-0 lg:mr-8">
+                            <a class="font-vietnam font-medium hover:opacity-50 transition-colors" href="#">Product</a>
+                        </li>
+                        <li class="site-header__item mb-6 lg:mb-0 lg:mr-8">
+                            <a class="font-vietnam font-medium hover:opacity-50 transition-colors" href="#">About Us</a>
+                        </li>
+                        <li class="site-header__item mb-6 lg:mb-0 lg:mr-8">
+                            <a class="font-vietnam font-medium hover:opacity-50 transition-colors" href="#">Careers</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="font-vietnam font-medium hover:opacity-50 transition-colors" href="#">Community</a>
+                        </li>
+                    </ul> 
+                </nav>
+                
+                <a class="hidden bg-header-button lg:inline-block py-3 px-8 rounded-3xl font-vietnam font-bold text-white hover:bg-header-button-hover" href="#">Get Started</a>
+                
+                <button class="site-header__button lg:hidden" type="button"></button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="site-main">
+        <section class="hero lg:pt-28">
+            <div class="container mx-auto">
+                <div class="flex flex-col-reverse lg:flex-row">
+                    <div class="text-center lg:text-start max-w-herocardmax mx-auto lg:mr-28 lg:pt-12">
+                        <h1 class="font-vietnam font-bold text-40px min-w-hero-title lg:max-w-herotitle mb-2.5 md:mb-4 lg:text-5xl lg:leading-hero-lineheight text-hero-title-color">
+                            Bring everyone
+                            together to build
+                            better products.
+                        </h1>
+                        <p class="mb-2.5 md:mb-10">
+                            Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+                        </p>
+                        <div class="max-w-herocardmax">
+                            <a class="inline-block bg-header-button py-3 px-8 rounded-3xl mx-auto font-vietnam font-bold text-white hover:bg-header-button-hover" href="#">Get Started</a>
+                        </div>                    
+                    </div> 
+                    
+                    <div>
+                        <div class="flex max-w-herocardmax mx-auto">
+                            <img class="w-1/2 md:hidden" src="../images/hero-1-mobile.png"
+                            srcset="../images/hero-1-mobile.png 1x, ../images/hero-1-mobile@2x.png 2x"
+                            width="153"
+                            height="139"
+                            alt="cards image">
+                            
+                            <img class="w-1/2 hidden md:block" src="../images/hero-1.png"
+                            srcset="../images/hero-1.png 1x, ../images/hero-1@2x.png 2x"
+                            width="153"
+                            height="139"
+                            alt="cards image">
+                            
+                            <img class="w-1/2 md:hidden" src="../images/hero-2-mobile.png" 
+                            srcset="../images/hero-2-mobile.png 1x, ../images/hero-2-mobile@2x.png 2x"
+                            width="153"
+                            height="139"
+                            alt="cards image">
+                            
+                            <img class="w-1/2 hidden md:block" src="../images/hero-2.png" 
+                            srcset="../images/hero-2.png 1x, ../images/hero-2@2x.png 2x"
+                            width="153"
+                            height="139"
+                            alt="cards image">
+                        </div>
+                        <div class="w-full max-w-herocardmax mx-auto">
+                            <img class="w-1/2 mx-auto lg:hidden"
+                            width="153"
+                            height="139"
+                            src="../images/hero-3-mobile.png" alt="cards-image"
+                            srcset="../images/hero-3-mobile.png 1x, ../images/hero-3-mobile@2x.png 2x"
+                            >
+                            
+                            <img class="w-1/2 mx-auto hidden lg:block"
+                            width="153"
+                            height="139"
+                            src="../images/hero-3.png" alt="cards-image"
+                            srcset="../images/hero-3.png 1x, ../images/hero-3@2x.png 2x"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="pt-24">
+            <div class="container mx-auto">
+                <div class="flex flex-col">
+                    <div class="text-center">
+                        <h2 class="text-hero-title-color mb-3 lg:mb-6 font-extrabold text-3xl lg:font-bold">
+                            What’s different about Manage?
+                        </h2>
+                        <div class="max-w-differentdesc mx-auto">
+                            <p class="text-hero-title-color opacity-50 font-normal leading-7">
+                                Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>
+                            <h4 class="font-vietnam font-bold mb-0">
+                                Track company-wide progress
+                            </h4>
+                            <p class="font-vietnam">
+                                See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer></footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>
