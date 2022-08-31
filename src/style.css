@@ -1,49 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* body{
-    background-image: url("../images/body-bg.svg");
+.bg-bgTop{
     background-repeat: no-repeat;
-} */
-
+    background-position: calc(50% + 170px) -170px;
+    background-size: 644px 542px;
+}  
+.bg-bgTop-2{
+    background-repeat: no-repeat;
+    background-position: calc(50% - 749px) 1137px;
+    background-size: 644px 542px;
+}  
+@media screen and (max-width: 1178){
+    .bg-bgTop-2{
+        background-position: calc(50% - 496px) 1113px;
+    }
+}
+@media screen and (max-width: 586px){
+    .bg-bgTop-2{
+        background-position: calc(50% + 391px) 253px;
+    }
+}
+@media screen and (max-width: 440px){
+    .bg-bgTop-2{
+        background-position: calc(50% + 339px) 409px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .bg-bgTop{
+        background-position: calc(50% + 484px) -182px;
+        background-size: auto;
+    }
+}
 .container{
     width: 100%;
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 .site-header--active .site-header__nav{
     display: block;
+    width: 100vw;   
+    height: 100vh;
+    left: -20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.33%, rgba(0, 0, 0, 0.599049) 99.79%);
 }
-
 .site-header__button{
     width: 23px;
     height: 18px;
-    background-image: url("../images/icons/hamburger.svg");
+    background-image: url("/src/images/icons/hamburger.svg");
     background-repeat: no-repeat;
+    z-index: 100;
 }
-
 .site-header--active .site-header__button{
     width: 21px;
     height: 22px;
-    background-image: url("../images/icons/hamburger-close.svg");
+    background-image: url("/src/images/icons/hamburger-close.svg");
 }
-
 .site-header__nav{
-    top: 290%;
+    top: 0%;
 }
-
 .site-header__list{
+    position: relative;
+    top: 10%;
+    width: 91%;
+    margin: 0 auto;
     min-width: 260px;
     max-width: 768px;
-    background-color: red;
-    border-radius: 4px;
 }
-
+@media screen and (min-width: 1024px){
+    .site-header__list{
+        width: 100%;
+        margin-top: -12px;
+    }
+}
+@media screen and (max-width: 395px){
+    .different__subtitle{
+        font-size: 12px;
+        padding: 3px 0;
+        padding-right: -30px;
+    }
+}
 .site-header__button{
     box-shadow: 0px 15px 15px -10px #FF9F8E;
+}
+.different__item::after{
+    position: absolute;
+    top: -50px;
+    width: 67px;
+    height: 39px;
+    padding-top: 8px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: -0.285714px;
+    color: #FFFFFF;
+    background: #F3603C;
+    border-radius: 39px;
+    content: "01";
+}
+.different__item:nth-child(2):after{
+    content: "02";
+}
+.different__item:nth-child(3):after{
+    content: "03";
+}
+@media screen and (min-width: 1024px){
+    .different__item::after{
+        position: absolute;
+        top: -50px;
+        left: -90px;
+        width: 67px;
+        height: 39px;
+        padding-top: 8px;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: -0.285714px;
+        color: #FFFFFF;
+        background: #F3603C;
+        border-radius: 39px;
+        content: "01";
+    }
+}
+.carousel__item::before{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 72px;
+    height: 72px;
+    content: "";
+    background-image: url("/src/images/carousel-1.jpg");
+    background-repeat: no-repeat;
+}
+.carousel__item:nth-child(2):before{
+    background-image: url("/src/images/carousel-2.jpg");
+    background-repeat: no-repeat;
+}
+.carousel__item:nth-child(3):before{
+    background-image: url("/src/images/carousel-3.jpg");
+    background-repeat: no-repeat;
+}
+.form__input:not(:placeholder-shown):invalid{
+    border: 1px solid red;
+    color: red;
+}
+.form__input:not(:placeholder-shown):invalid ~ span{
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 10px;
 }
