@@ -135,7 +135,7 @@
     width: 72px;
     height: 72px;
     content: "";
-    background-image: url("/src/images/carousel-1.jpg");
+    background-image: url("../src/images/carousel-1.jpg");
     background-repeat: no-repeat;
 }
 .carousel__item:nth-child(2):before{
